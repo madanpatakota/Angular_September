@@ -1,5 +1,12 @@
 
-<input type="text" />
+<input type ="text" placeholder="Enter your email address" 
+[value]="Email" #EmployeeEmail/>
 
+<button (click)="Submit(EmployeeEmail)">Click</button>
 
-<button (click)="asdasda()" ></button>
+<br>
+<br>
+
+<input type="text" placeholder="Enter your Designation" [value]="Designation" #EmployeeDesignation/>
+
+<button (click)="evtSubmitDesignation()">Click</button>

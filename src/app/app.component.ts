@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular_September';
+  Submit(EmployeeEmail:HTMLInputElement){
+    console.log(EmployeeEmail);
+    console.log(EmployeeEmail.value);
+}
+evtSubmitDesignation(){
+  console.log(this.employeeDesignation);
+
+  console.log(this.employeeDesignation?.nativeElement.value);
+
+}
 
 
-  asdfasas( ){
+Email:string="";
+Designation:string="";
 
-  }
+@ViewChild('EmployeeDesignation') 
+employeeDesignation:ElementRef|undefined;
 
 
 }
