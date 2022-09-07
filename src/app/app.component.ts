@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_September';
+
+Test="";
+
+
+  Evntclick(){
+    this.Test="This is Sparta";
+  }
 }
