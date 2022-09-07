@@ -7,3 +7,11 @@ where we can easily fetch a value of any input through local references.
 ElementRef:-
 
 We can get direct access to any DOM element by using a special class called ElementRef
+
+The nativeElement returns an object which is used by the browser to represent the element in the Domain Object Model. 
+
+
+Router outlet:
+
+Router-Outlet is an Angular directive from the router library that is used to insert the 
+component matched by routes to be displayed on the screen

@@ -10,12 +10,6 @@ export class AppComponent {
     console.log(EmployeeEmail);
     console.log(EmployeeEmail.value);
 }
-evtSubmitDesignation(){
-  console.log(this.employeeDesignation);
-
-  console.log(this.employeeDesignation?.nativeElement.value);
-
-}
 
 
 Email:string="";
@@ -23,6 +17,13 @@ Designation:string="";
 
 @ViewChild('EmployeeDesignation') 
 employeeDesignation:ElementRef|undefined;
+
+evtSubmitDesignation(){
+  console.log(this.employeeDesignation);
+
+  console.log(this.employeeDesignation?.nativeElement.value);
+
+}
 
 
 }
