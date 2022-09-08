@@ -1,5 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
-import { Component,Input, OnInit,OnChanges, SimpleChanges } from '@angular/core';
+import { Component,Input, OnInit,OnChanges, SimpleChanges, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -11,6 +11,8 @@ export class ChildComponentComponent implements OnInit ,OnChanges {
 
   constructor() { }
   @Input() Bill:any;
+
+  @Output() Evntemitupdate=new EventEmitter<any>();
  Textinput="";
 
 
@@ -20,6 +22,11 @@ ngOnChanges(changes:SimpleChanges):void{
   }
 
   ngOnInit(): void {
+  }
+  
+  evtupdate(inputref:HTMLInputElement){
+    // console.log(inputref.value);
+    this.Evntemitupdate.emit(inputref.value)
   }
 
 }

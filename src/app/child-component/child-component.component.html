@@ -1,11 +1,5 @@
 <div style="background-color:green;margin-top:60px;height:60px;">
     <p>Childcomp Test</p>
-    <input type="text" [value]="Textinput"/>
-    sample
-....This is sparta
-
-, s. asd fa.s, 
-
-<p>hello world</p>
-another case
+    <input type="text" [value]="Textinput" #IPtextFromParent/>
+    <button (click)="evtupdate(IPtextFromParent)">Update</button>
 </div>

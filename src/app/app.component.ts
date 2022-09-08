@@ -9,7 +9,11 @@ export class AppComponent {
   title = 'Angular_September';
 
 Test="";
-
+Updatedvalue="";
+Evntemittest(eventdetails:any){
+  // console.log("I am in app component",eventdetails);
+  this.Updatedvalue=eventdetails;
+}
 
   Evntclick(){
     this.Test="This is Sparta";

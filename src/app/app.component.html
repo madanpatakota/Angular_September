@@ -1,7 +1,9 @@
 <p>Input Decorator</p>
 <div style="background-color:grey ;height:250px;text-align: center;padding: 30px;">
   <p>Parent Comp test</p>
+  <!-- --Ouptdec start---- -->
+  <P>Updated test value :{{Updatedvalue}}</P>
   <button (click)="Evntclick()">Communicate</button>
-<app-child-component [Bill]="Test"></app-child-component>
+<app-child-component [Bill]="Test" (Evntemitupdate)="Evntemittest($event)"></app-child-component>
 </div>
 
